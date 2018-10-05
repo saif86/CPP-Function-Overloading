@@ -22,7 +22,7 @@ int test(int a){ }
 double test(int b){ }
 ```
 
-## Example Code
+## Example 1: Function Overloading
 ```
 /*Calling overloaded function test() with different argument/s.*/ 
 
@@ -64,3 +64,43 @@ Integer number: 5 And float number: 5.5
 ```
 
 In above example, function test( ) is called with integer argument at first. Then, function test() is called with floating point argument and finally it is called using two arguments of type int and float. Although the return type of all these functions is same, that is, void, it's not mandatory to have same return type for all overloaded functions. This can be demonstrated by example below.
+
+## Example 2: Function Overloading
+```
+/* C++ Program to return absolute value of variable types 
+  integer and float using function overloading */ 
+
+#include <iostream>
+using namespace std;
+
+int absolute(int);
+float absolute(float);
+int main() { 
+  int a = -5; 
+  float b = 5.5; 
+  cout<<"Absolute value of "<<a<<" = "<<absolute(a)<<endl; 
+  cout<<"Absolute value of "<<b<<" = "<<absolute(b) <<endl; 
+  
+  system("pause"); 
+  return 0; 
+} 
+
+int absolute(int var) { 
+  if (var < 0) 
+    var = -var; 
+  return var; 
+} 
+
+float absolute(float var){ 
+  if (var < 0.0) 
+    var = -var; 
+  return var; 
+}
+```
+
+### Output
+```
+Absolute value of -5 = 5
+Absolute value of 5.5 = 5.5
+```
+In above example, two functions absolute( ) are overloaded. Both take single argument but one takes integer type argument and other takes floating point type argument. Function absolute() calculates the absolute value of argument passed and returns it. Notice both overloaded functions' return types are different.
