@@ -63,4 +63,4 @@ Float number: 5.5
 Integer number: 5 And float number: 5.5
 ```
 
-In above example, function test() is called with integer argument at first. Then, function test() is called with floating point argument and finally it is called using two arguments of type int and float. Although the return type of all these functions is same, that is, void, it's not mandatory to have same return type for all overloaded functions. This can be demonstrated by example below.
+In above example, function test( ) is called with integer argument at first. Then, function test() is called with floating point argument and finally it is called using two arguments of type int and float. Although the return type of all these functions is same, that is, void, it's not mandatory to have same return type for all overloaded functions. This can be demonstrated by example below.
